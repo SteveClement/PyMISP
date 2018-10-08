@@ -1,0 +1,4 @@
+pymisp
+flask
+Flask-AutoIndex
+redis
