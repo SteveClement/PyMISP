@@ -6,6 +6,7 @@ from flask_autoindex import AutoIndex
 from settings import outputdir
 
 app = Flask(__name__)
+app.url_map.strict_slashes = False
 AutoIndex(app, browse_root=os.path.join(os.path.curdir, outputdir))
 
 if __name__ == '__main__':
